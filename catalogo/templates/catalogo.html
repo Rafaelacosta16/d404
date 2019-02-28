@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% for filme in filmes %}
+    <p>{{filme.nome}}</p>
+    <p>{{filme.sinopse}}</p>
+    <img src="{{filme.cartaz}}" alt="Cartaz do Filme {{filme.nome}}  "width="300px">
+    {% endfor %}
+{% endblock %}
